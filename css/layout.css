@@ -7,13 +7,11 @@
         display: inline-block;
         width: 600px;
         margin-left: calc(50% - 300px);
-        background-color: antiquewhite;
     }
     .container > .row {
         display: inline-block;
         width: 1000px;
         margin-left: calc(50% - 500px);
-        background-color: aquamarine;
     }
         .container > .row > .column {
             display: inline-block;
@@ -21,10 +19,8 @@
         }
             .container > .row > .column.left {
                 width: 50%;
-                background-color: orange;
             }
             .container > .row > .column.right {
                 width: 40%;
                 margin-left: 10%;
-                background-color: tomato;
             }
