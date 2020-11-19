@@ -1,5 +1,6 @@
 /* custom CSS - everything else, that wasn't styled with components css */
 
+/* layout */
 .container.hero {
     padding-bottom: var(--section-padding);
 }
@@ -15,3 +16,38 @@ footer.container {
 .bg-main-color {
     background-color: var(--main-color);
 }
+
+/* hero */
+.hero {
+    text-align: center;
+}
+
+.hero img {
+    height: 40px;
+    margin-bottom: calc(var(--hero-space) * 2);
+}
+.hero h1 {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: var(--hero-space);
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #000;
+}
+.hero p {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: calc(var(--hero-space) * 3);
+    font-size: 18px;
+    color: #555;
+}
+.hero .clock {
+    margin-bottom: calc(var(--hero-space) * 2);
+}
+.hero .form {
+    margin-bottom: var(--hero-space);
+}
+
+/* main content */
+
+/* footer */
