@@ -6,14 +6,12 @@
     .container > .row-short {
         display: inline-block;
         width: 600px;
-        margin-left: calc(50% - 300px);
-        margin-right: calc(50% - 300px);
+        margin: 0 calc(50% - 300px);
     }
     .container > .row {
         display: inline-block;
         width: 1000px;
-        margin-left: calc(50% - 500px);
-        margin-right: calc(50% - 500px);
+        margin: 0 calc(50% - 500px);
     }
         .container > .row > .column {
             display: inline-block;
@@ -30,16 +28,14 @@
 @media (max-width: 1100px) {
     .container > .row {
         width: 800px;
-        margin-left: calc(50% - 400px);
-        margin-right: calc(50% - 400px);
+        margin: 0 calc(50% - 400px);
     }
 }
 
 @media (max-width: 900px) {
     .container > .row {
         width: 600px;
-        margin-left: calc(50% - 300px);
-        margin-right: calc(50% - 300px);
+        margin: 0 calc(50% - 300px);
     }
 }
 
@@ -50,19 +46,18 @@
     }
         .container > .row-short {
             width: 100%;
-            margin-left: 0;
+            margin: 0;
         }
         .container > .row {
             width: 100%;
-            margin-left: 0;
+            margin: 0;
         }
             .container > .row > .column.left {
                 width: 100%;
             }
             .container > .row > .column.right {
                 width: 100%;
-                margin-left: 0;
-                margin-right: 0;
+                margin: 0;
                 margin-top: calc(var(--section-padding) * 2);
             }
 }
