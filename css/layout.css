@@ -7,13 +7,11 @@
         display: inline-block;
         width: 600px;
         margin-left: calc(50% - 300px);
-        background-color: aquamarine;
     }
     .container > .row {
         display: inline-block;
         width: 1000px;
         margin-left: calc(50% - 500px);
-        background-color: aqua;
     }
         .container > .row > .column {
             display: inline-block;
@@ -31,7 +29,6 @@
     .container > .row {
         width: 800px;
         margin-left: calc(50% - 400px);
-        background-color: tomato;
     }
 }
 
@@ -39,36 +36,28 @@
     .container > .row {
         width: 600px;
         margin-left: calc(50% - 300px);
-        background-color: olivedrab;
     }
 }
 
 @media (max-width: 700px) {
-    .container > .row-short {
-        width: 400px;
-        margin-left: calc(50% - 200px);
-        background-color: rebeccapurple;
-    }
-    .container > .row {
-        width: 400px;
-        margin-left: calc(50% - 200px);
-        background-color: palevioletred;
-    }
-}
-
-@media (max-width: 500px) {
     .container {
         padding-left: 20px;
         padding-right: 20px;
     }
-    .container > .row-short {
-        width: 100%;
-        margin-left: 0;
-        background-color: yellow;
-    }
-    .container > .row {
-        width: 100%;
-        margin-left: 0;
-        background-color: yellowgreen;
-    }
+        .container > .row-short {
+            width: 100%;
+            margin-left: 0;
+        }
+        .container > .row {
+            width: 100%;
+            margin-left: 0;
+        }
+            .container > .row > .column.left {
+                width: 100%;
+            }
+            .container > .row > .column.right {
+                width: 100%;
+                margin-left: 0;
+                margin-top: calc(var(--section-padding) * 2);
+            }
 }
