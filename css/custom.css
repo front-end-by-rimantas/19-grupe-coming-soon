@@ -71,3 +71,42 @@ main p {
     }
 
 /* footer */
+footer {
+    text-align: center;
+    line-height: 32px;
+    font-size: 17px;
+    color: #fffa;
+}
+    footer > .row {
+        border-bottom: 1px solid #fff;
+    }
+    footer .text-trio {
+        display: inline-block;
+        width: 100%;
+    }
+        footer .text-trio > .text {
+            display: inline-block;
+            padding: 0 10px;
+            position: relative;
+        }
+            footer .text-trio > .text::before {
+                display: inline-block;
+                content: '';
+                width: 1px;
+                height: 14px;
+                background-color: #fff;
+                position: absolute;
+                top: 50%;
+                left: -2px;
+                transform: translateY(-50%);
+            }
+            footer .text-trio > .text:first-of-type::before {
+                display: none;
+            }
+    footer p {
+        display: inline-block;
+        width: 100%;
+    }
+    footer a {
+        color: #fff;
+    }
