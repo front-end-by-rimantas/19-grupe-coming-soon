@@ -71,3 +71,72 @@ main p {
     }
 
 /* footer */
+footer {
+    text-align: center;
+    line-height: 32px;
+    font-size: 17px;
+    color: #fffa;
+}
+    footer.container > .row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px 20px;
+        border-bottom: 1px solid #fff;
+    }
+    footer .fa {
+        display: inline-block;
+        width: 40px;
+        padding: 10px;
+        line-height: 20px;
+        color: #fff;
+        text-align: center;
+        border-radius: 50%;
+        transition: all 0.5s;
+    }
+        footer .fa:hover {
+            background-color: #fff;
+            color: var(--main-color);
+        }
+    footer .text-trio {
+        display: inline-block;
+        width: 100%;
+    }
+        footer .text-trio > .text {
+            display: inline-block;
+            padding: 0 10px;
+            position: relative;
+        }
+            footer .text-trio > .text::before {
+                display: inline-block;
+                content: '';
+                width: 1px;
+                height: 14px;
+                background-color: #fff;
+                position: absolute;
+                top: 50%;
+                left: -2px;
+                transform: translateY(-50%);
+            }
+            footer .text-trio > .text:first-of-type::before {
+                display: none;
+            }
+    footer p {
+        display: inline-block;
+        width: 100%;
+    }
+    footer a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+@media (max-width: 700px) {
+    footer .text-trio > .text {
+        width: 100%;
+        padding: 0;
+    }
+        footer .text-trio > .text::before {
+            display: none;
+        }
+}
