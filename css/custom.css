@@ -3,6 +3,11 @@
 /* layout */
 .container.hero {
     padding-bottom: var(--section-padding);
+    background-image: url(../img/hero-image.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    background-attachment: fixed;
+    min-height: 100vh;
 }
 
 footer.container {
