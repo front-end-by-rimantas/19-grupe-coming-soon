@@ -51,7 +51,7 @@ footer.container {
 }
 .hero .form {
     width: 90%;
-    margin-bottom: var(--hero-space);
+    margin: 0 5% var(--hero-space);
 }
     .hero .form > input {
         width: 100%;
