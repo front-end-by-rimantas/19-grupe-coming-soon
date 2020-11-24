@@ -1,1 +1,29 @@
-.clock {}
+.hero .clock {
+    display: inline-block;
+    width: 100%;
+}
+.clock .time-box {
+    display: inline-block;
+    float: left;
+    width: 25%;
+    text-transform: uppercase;
+    color: #fff;
+}
+.clock .time-box > h2 {
+    font-size: 50px;
+}
+
+@media (max-width: 700px){
+    .clock .time-box {
+        width: 50%;
+        margin-bottom: var(--hero-space);
+    }
+    .clock .time-box > h2 {
+        margin: 0;
+    }
+}
+@media (max-width: 300px){
+    .clock .time-box {
+        width: 100%;
+    }
+}
