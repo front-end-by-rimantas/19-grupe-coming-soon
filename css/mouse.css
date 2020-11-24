@@ -1,1 +1,32 @@
-.mouse {}
+.mouse {
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+    border: 15px solid #fff;
+    border-radius: 100px;
+}
+    .mouse > .wheel {
+        display: inline-block;
+        width: 15px;
+        height: 30px;
+        border-radius: 8px;
+        background-color: #fff;
+        margin-top: 50px;
+        animation-name: peliukas;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+    }
+
+@keyframes peliukas {
+    0% {
+        margin-top: 50px;
+        background-color: #ffff;
+    }
+    50% {
+        background-color: #ffff;
+    }
+    100% {
+        margin-top: 180px;
+        background-color: #fff0;
+    }
+}
