@@ -75,6 +75,10 @@ main p {
         text-decoration-line: none;
     }
 
+main .form > .btn {
+    float: right;
+}
+
 /* footer */
 footer {
     text-align: center;
