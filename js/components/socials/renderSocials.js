@@ -1,14 +1,9 @@
-import { isInputValidation } from "./isInputValidation.js";
+import { inputValidation } from "./inputValidation.js";
 
 
 function renderSocials(data) {
     // input validation
-    if (!Array.isArray(data)) {
-        console.error('ERROR: social ikonom generuoti reikia array tipo duomenu.');
-        return false;
-    }
-    if (data.length === 0) {
-        console.error('ERROR: social ikonom generuoti reikia ne tuscio array tipo duomenu saraso.');
+    if (!inputValidation(data)) {
         return false;
     }
 
