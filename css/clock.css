@@ -9,7 +9,7 @@
         text-transform: uppercase;
         color: #fff;
     }
-        .clock .time-box > h2 {
+        .clock .time-box > .time {
             font-size: 50px;
         }
 
@@ -18,7 +18,7 @@
         width: 50%;
         margin-bottom: var(--hero-space);
     }
-        .clock .time-box > h2 {
+        .clock .time-box > .time {
             margin: 0;
         }
 }
