@@ -1,1 +1,39 @@
-.mouse {}
+.mouse {
+    display: inline-block;
+    width: 20px;
+    height: 30px;
+    border: 3px solid #fff;
+    border-radius: 100px;
+}
+    .mouse > .wheel {
+        display: inline-block;
+        width: 3px;
+        height: 6px;
+        border-radius: 2px;
+        background-color: #fff;
+        /* background-image: url(../img/mouse.jpeg);
+        background-size: contain; */
+        margin-top: 50px;
+        animation-name: peliukas;
+        animation-duration: 0.85s;
+        animation-iteration-count: infinite;
+    }
+        .mouse > .wheel:hover {
+            animation-play-state: paused;
+        }
+
+@keyframes peliukas {
+    0% {
+        margin-top: 5px;
+        background-color: #ffff;
+        /* transform: rotate(0deg); */
+    }
+    50% {
+        background-color: #ffff;
+    }
+    100% {
+        margin-top: 16px;
+        background-color: #fff0;
+        /* transform: rotate(720deg); */
+    }
+}

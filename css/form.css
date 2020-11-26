@@ -1,1 +1,39 @@
-.form {}
+.form {
+    display: inline-block;
+    width: 100%;
+    color: #444;
+}
+    .form > input {
+        display: inline-block;
+        float: left;
+        width: 45%;
+        margin-bottom: 30px;
+        font-size: 18px;
+        line-height: 36px;
+        border: none;
+        border-bottom: 2px solid #ccc;
+    }
+        .form > input + input {
+            margin-left: 10%;
+        }
+    .form > textarea {
+        display: inline-block;
+        width: 100%;
+        min-height: 100px;
+        max-height: 400px;
+        margin-bottom: 30px;
+        font-size: 18px;
+        line-height: 25px;
+        border: none;
+        border-bottom: 2px solid #ccc;
+        resize: vertical;
+    }
+
+@media (max-width: 1100px) {
+    .form > input {
+        width: 100%;
+    }
+        .form > input + input {
+            margin-left: 0;
+        }
+}
