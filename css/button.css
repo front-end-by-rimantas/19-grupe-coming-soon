@@ -10,8 +10,38 @@
     border-radius: 4px;
     cursor: pointer;
     box-shadow: 0 4px 8px #0008;
+    text-align: center;
 }
     .btn:hover {
         box-shadow: 0 4px 10px #000a;
         opacity: 1;
     }
+    .btn.circle {
+        padding: 10px;
+        width: 40px;
+        border-radius: 50%;
+    }
+    .btn.btn-main-color {
+        background-color: var(--main-color);
+        color: #fff;
+    }
+        .btn.btn-main-color:hover {
+            background-color: var(--main-color);
+            color: #fff;
+        }
+        .btn.btn-main-color.btn-hover-invert:hover {
+            background-color: #fff;
+            color: var(--main-color);
+        }
+    .btn.btn-secondary-color {
+        background-color: var(--secondary-color);
+        color: #fff;
+    }
+        .btn.btn-secondary-color:hover {
+            background-color: var(--secondary-color);
+            color: #fff;
+        }
+        .btn.btn-secondary-color.btn-hover-invert:hover {
+            background-color: #fff;
+            color: var(--secondary-color);
+        }
