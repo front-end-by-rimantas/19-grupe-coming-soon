@@ -106,8 +106,9 @@ footer {
         gap: 10px;
         padding: 10px 20px;
         border-bottom: 1px solid #fff;
+        position: relative;
     }
-    footer .fa {
+    footer .social.fa {
         display: inline-block;
         width: 40px;
         padding: 10px;
@@ -117,10 +118,15 @@ footer {
         border-radius: 50%;
         transition: all 0.5s;
     }
-        footer .fa:hover {
+        footer .social.fa:hover {
             background-color: #fff;
             color: var(--main-color);
         }
+    footer .btn.circle {
+        position: absolute;
+        top: -24px;
+        right: -13px;
+    }
     footer .text-trio {
         display: inline-block;
         width: 100%;
