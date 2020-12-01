@@ -9,6 +9,11 @@ function formValidator(selector) {
 
     const allElements = [...allInputDOMs, ...allTextareaDOMs];
 
+    if (!submitBtnDOM) {
+        console.error('ERROR: formoje nerasta input:submit mygtukas.');
+        return false;
+    }
+
     submitBtnDOM.addEventListener('click', () => {
         let errorCount = 0;
         console.clear();
@@ -17,21 +22,28 @@ function formValidator(selector) {
             const validationRule = input.dataset.validation;
             const text = input.value;
 
-            const nameError = isValidName(text);
-            const emailError = isValidEmail(text);
-            const textError = isValidText(text);
+            if (validationRule === 'name') {
+                const nameError = isValidName(text);
+                if (nameError !== true) {
+                    console.log(nameError);
+                    errorCount++;
+                }
+            }
 
-            if (validationRule === 'name' && nameError !== true) {
-                console.log(nameError);
-                errorCount++;
+            if (validationRule === 'email') {
+                const emailError = isValidEmail(text);
+                if (emailError !== true) {
+                    console.log(emailError);
+                    errorCount++;
+                }
             }
-            if (validationRule === 'email' && emailError !== true) {
-                console.log(emailError);
-                errorCount++;
-            }
-            if (validationRule === 'text' && textError !== true) {
-                console.log(textError);
-                errorCount++;
+
+            if (validationRule === 'text') {
+                const textError = isValidText(text);
+                if (textError !== true) {
+                    console.log(textError);
+                    errorCount++;
+                }
             }
         }
 
