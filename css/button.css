@@ -11,6 +11,7 @@
     cursor: pointer;
     box-shadow: 0 4px 8px #0008;
     text-align: center;
+    border: none;
 }
     .btn:hover {
         box-shadow: 0 4px 10px #000a;

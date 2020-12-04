@@ -34,10 +34,12 @@
         }
             .progress-bar > .bottom > .bar > .loader {
                 display: inline-block;
-                width: 100%;
+                width: 0;
                 height: 100%;
                 background-color: var(--main-color);
-                animation: loading 2s;
+            }
+            .progress-bar.animate > .bottom > .bar > .loader {
+                animation: loading 2s forwards;
             }
 
 

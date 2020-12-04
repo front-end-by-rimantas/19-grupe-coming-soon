@@ -1,0 +1,48 @@
+.toast {
+    display: none;
+    width: 260px;
+    position: fixed;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    background-color: #fff;
+    box-shadow: 0 2px 8px #0008;
+}
+    .toast.visible {
+        display: block;
+    }
+    .toast > .fa {
+        display: inline-block;
+        float: left;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 24px;
+        background-color: #fff;
+        color: #333;
+    }
+        .toast > .fa.fa-check {
+            background-color: green;
+            color: #fff;
+        }
+        .toast > .fa.fa-shield {
+            display: none;
+            background-color: red;
+            color: #fff;
+        }
+        .toast.error > .fa.fa-check {
+            display: none;
+        }
+        .toast.error > .fa.fa-shield {
+            display: inline-block;
+        }
+    .toast > p {
+        display: inline-block;
+        float: left;
+        width: 180px;
+        padding: 10px;
+        line-height: 20px;
+        font-size: 16px;
+        color: #333;
+    }

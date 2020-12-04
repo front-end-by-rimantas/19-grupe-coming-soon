@@ -3,7 +3,7 @@
     width: 100%;
     color: #444;
 }
-    .form > input {
+    .form > input:not(.btn) {
         display: inline-block;
         float: left;
         width: 45%;
@@ -13,7 +13,7 @@
         border: none;
         border-bottom: 2px solid #ccc;
     }
-        .form > input + input {
+        .form > input:not(.btn) + input:not(.btn) {
             margin-left: 10%;
         }
     .form > textarea {
@@ -30,10 +30,10 @@
     }
 
 @media (max-width: 1100px) {
-    .form > input {
+    .form > input:not(.btn) {
         width: 100%;
     }
-        .form > input + input {
+        .form > input:not(.btn) + input:not(.btn) {
             margin-left: 0;
         }
 }

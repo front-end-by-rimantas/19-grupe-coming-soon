@@ -53,13 +53,13 @@ footer.container {
     width: 90%;
     margin: 0 5% var(--hero-space);
 }
-    .hero .form > input {
+    .hero .form > input:not(.btn) {
         width: 100%;
         color: #fff;
         background-color: transparent;
         border-bottom-color: #fff;
     }
-        .hero .form > input::placeholder {
+        .hero .form > input:not(.btn)::placeholder {
             color: #fff;
         }
     .hero .form > .btn {
